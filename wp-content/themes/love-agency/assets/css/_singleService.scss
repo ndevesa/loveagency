@@ -1,0 +1,75 @@
+#SingleService{
+    #serviceContent{
+      padding: 4rem 2rem;
+    }
+    .service{ 
+      background-color: black;
+      color: white;
+      padding: 1rem;
+      border-radius: 20px;
+      position: relative;
+      min-height: 550px;
+      @include media(xs){
+        min-height: auto;
+      }
+      .header{
+        padding-bottom: 1rem;
+        border-bottom: 1px solid white;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        small{
+          font-style: italic;
+          flex-basis: 20%;
+        }
+        .title{
+          font-family: $medium;
+          font-size: 1.7rem;
+          flex-basis: 80%;
+        }
+      }
+      .body{
+        padding-top: 1rem;
+        font-size: 14px;
+        .subtitle{
+          margin-bottom: 4rem;
+          font-family: $light;
+          font-size: 28px;
+          max-width: 70%;
+          line-height: 1;
+        }
+        p{
+          font-size: 17px;
+        }
+        span{
+          cursor: pointer;
+          font-size: 32px;
+          position: absolute;
+          right: 20px;
+          bottom: 5px;
+        }
+      }
+    }/* Service */
+    [class*="col-12"]{
+      &:last-of-type{
+        position: relative;
+        &:last-child{
+          &:after{
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-image: url('../img/smile.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 45%;
+            right: -10px;
+            z-index: 2;
+          }
+        }
+      }
+    }
+    
+  }

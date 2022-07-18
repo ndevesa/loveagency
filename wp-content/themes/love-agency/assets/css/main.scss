@@ -1,0 +1,32 @@
+//TYPO VARIABLES    
+$bold: 'Hauora-Bold', sans-serif;
+$medium: 'Hauora-SemiBold', sans-serif;
+$regular: 'Hauora-Regular', sans-serif;
+$light: 'Hauora-Light', sans-serif;
+
+$white: #EAEAEA;
+
+/* MIXINS  */
+@import 'mixins';
+
+/* COMPONENTS */
+@import 'reset';
+@import 'buttons';
+@import 'typos';
+@import 'hero';
+@import 'nav';
+@import 'menu';
+@import 'services';
+@import 'clients';
+@import 'footer';
+@import 'social';
+@import 'values';
+@import 'owlcarouselcustom';
+
+/* SECTIONS */
+@import 'singleService';
+
+#Home{
+  background-color: black;
+}
+

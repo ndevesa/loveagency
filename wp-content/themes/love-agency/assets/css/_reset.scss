@@ -1,0 +1,56 @@
+*, html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-bottom: 0;
+  scroll-snap-type: y mandatory;
+  padding: 0;
+  margin: 0;
+  /*  overflow-x: hidden; */
+}
+body{
+  font-family: $regular;
+  color: black;
+  background-color: $white;
+  overflow-x: hidden;
+  &.no-scroll{
+    overflow: hidden;
+  }
+  @include media(xs){
+    font-size: 13px;
+  }
+}
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+strong{
+  font-family: $bold;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.spotlight-instagram-feed{
+  .MediaTile__overlay{
+    display: none;
+  }
+  .MediaThumbnail__root{
+    cursor: pointer;
+    transition: opacity .2s linear;
+    &:hover{
+      opacity: .7;
+    }
+  }
+}
+
+
+#viewReel{
+  .modal-dialog{
+    max-width: 1200px;
+  }
+}

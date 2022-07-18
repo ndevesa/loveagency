@@ -1,0 +1,123 @@
+.btn{
+    color: black;
+    font-family: $regular;
+    padding: .8rem 1.6rem;
+    @include media(xs){
+      font-size: 14px;
+    }
+    &.-outline{
+      border: 1px solid black;
+      border-radius: 50px;
+      transition: all .3s linear;
+      padding: .4rem 2rem .4rem 1.5rem;
+      position: relative;
+      &:before{
+        content: '>';
+        color: black;
+        position: absolute;
+        top: 50%;
+        margin-top: -7px;
+        right: 15px;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        line-height: 1;
+      }
+      &:hover{
+        color: white;
+        background-color: black;
+        padding-right: 2.5rem;
+        &:before{
+          color: white;
+        }
+      }
+    }
+
+    &.-no-outline{
+      /* text-transform: capitalize; */
+      position: relative;
+      padding: 0;
+      padding-right: 2rem;
+      transition: all .2s linear;
+      &:hover{
+        color: black;
+      }
+      &:before{
+        content: '';
+        width: 0;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        right: 10px;
+        transition: all 0.2s ease;
+      }
+      &:hover:before{
+        right: 0;
+        width: 20px;
+      }
+      &:after{
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-color: transparent transparent transparent black;
+        position: absolute;
+        top: 50%;
+        margin-top: -5px;
+        right: 10px;
+        transition: all 0.2s ease;
+      }
+      &:hover:after{
+        right: 0;
+      }
+
+    }
+
+    &.-circle{
+      font-family: $medium;
+      border-radius: 50%;
+      text-align: center;
+      text-transform: uppercase;
+      height: 120px;
+      width: 120px;
+      font-size: 13px;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('../img/circlebg-white.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition: all .2s linear;
+      transform: rotate(20deg);
+      @include media(xs){
+        width: 110px;
+        height: 110px;
+      }
+      &.-black{
+        color: white;
+        background-image: url('../img/circlebg-black.png');
+        &:hover{
+          color: black;
+          background-image: url('../img/circlebg-white.png');
+        }
+      }
+      &.-purple{
+        color: white;
+        background-image: url('../img/circlebg-purple.png');
+        &:hover{
+          color: black;
+          background-image: url('../img/circlebg-white.png');
+        }
+      }
+      &.-heroBtn{
+        &:hover{
+          background-image: url('../img/circlebg-purple.png');
+          color: white;
+        }
+      }
+    }
+  }

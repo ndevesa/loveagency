@@ -1,0 +1,17 @@
+#Social{
+    a{
+        margin: 0 .2rem;
+        li{
+            transition: opacity .2s linear;
+            cursor: pointer;
+            &:hover{
+                opacity: .7;
+            }
+            img{
+                @include media(xs){
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}

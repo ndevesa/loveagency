@@ -1,0 +1,102 @@
+footer{
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 1rem;
+    @include media(xs){
+        color: white;
+        background-color: black;
+        background-image: url('../img/clientsbg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr .3fr .7fr;
+        align-items: center;
+        gap: 5rem;
+        @include media(xs){
+            grid-template-columns: 1fr;
+            gap: 0rem;
+        }
+        .c{
+            min-height: 100px;
+            display: flex;
+            align-items: flex-end;
+            @include media(xs){
+                padding: 1rem;
+            }
+            h1{
+                margin: 0;
+                @include media(xs){
+                    font-size: 2.4rem;
+                }
+            }
+            span{
+                position: relative;
+                &:after{
+                    content: '';
+                    width: 100%;
+                    height: 30px;
+                    background-image: url('../img/misce1.svg');
+                    filter: invert(1);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    bottom: -10px;
+                    left: 0;
+                    @include media(xs){
+                        filter: none;
+                    }
+                }
+            }
+            &:first-of-type{
+                justify-content: flex-end;
+                @include media(xs){
+                    justify-content: flex-start;
+                }
+            }
+            &:nth-child(2){
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                min-height: 300px;
+                @include media(xs){
+                    min-height: auto;
+                    justify-content: space-between;
+                }
+                a.btn.-circle{
+                    &:first-of-type{
+                        margin-top: -2rem;
+                        transform: rotate(-25deg);
+                        border: 1px solid;
+                        @include media(xs){
+                            margin-top: 1rem;
+                            color: black;
+                            background-image: url('../img/circlebg-white.png');
+                        }
+                    }
+                    &:last-of-type{
+                        margin-top: -5rem;
+                        transform: rotate(15deg);
+                        @include media(xs){
+                            margin-top: -2rem;
+                        }
+                        &:hover{
+                            border: 1px solid;
+                        }
+                    }
+                }
+            }
+            &:last-of-type{
+                align-items: flex-end;
+                justify-content: flex-end;
+                flex-direction: column;
+            }
+        }
+    }
+}

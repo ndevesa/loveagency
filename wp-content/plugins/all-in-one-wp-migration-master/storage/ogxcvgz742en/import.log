@@ -1,0 +1,30 @@
+Jun 05 2022 03:13:18
+{"action":"ai1wm_import","ai1wm_manual_import":"1","storage":"ogxcvgz742en","archive":"localhost-love-20220605-031138-900.wpress","secret_key":"sotFZNNzfeMD"}
+
+Jun 05 2022 03:13:18
+{"action":"ai1wm_import","ai1wm_manual_import":"1","storage":"ogxcvgz742en","archive":"localhost-love-20220605-031138-900.wpress","secret_key":"sotFZNNzfeMD","priority":"50"}
+
+Jun 05 2022 03:13:23
+{"action":"ai1wm_import","ai1wm_manual_import":"1","storage":"ogxcvgz742en","archive":"localhost-love-20220605-031138-900.wpress","secret_key":"sotFZNNzfeMD","priority":"150"}
+
+Jun 05 2022 03:13:24
+{"action":"ai1wm_import","ai1wm_manual_import":"1","storage":"ogxcvgz742en","archive":"localhost-love-20220605-031138-900.wpress","secret_key":"sotFZNNzfeMD","priority":"200","total_files_count":1230,"total_files_size":32314328}
+
+Jun 05 2022 03:13:35
+{"action":"ai1wm_import","ai1wm_manual_import":"1","storage":"ogxcvgz742en","archive":"localhost-love-20220605-031138-900.wpress","secret_key":"sotFZNNzfeMD","priority":"250","total_files_count":1230,"total_files_size":32314328,"archive_bytes_offset":16436100,"file_bytes_offset":0,"processed_files_size":13327986,"completed":false}
+
+Jun 05 2022 03:13:47
+{"action":"ai1wm_import","ai1wm_manual_import":"1","storage":"ogxcvgz742en","archive":"localhost-love-20220605-031138-900.wpress","secret_key":"sotFZNNzfeMD","priority":"250","total_files_count":1230,"total_files_size":32314328,"archive_bytes_offset":30646547,"file_bytes_offset":0,"processed_files_size":26015237,"completed":false}
+
+Jun 05 2022 03:13:53
+{"action":"ai1wm_import","ai1wm_manual_import":"1","storage":"ogxcvgz742en","archive":"localhost-love-20220605-031138-900.wpress","secret_key":"sotFZNNzfeMD","priority":"250"}
+
+Jun 05 2022 03:13:54
+{"action":"ai1wm_import","ai1wm_manual_import":"1","storage":"ogxcvgz742en","archive":"localhost-love-20220605-031138-900.wpress","secret_key":"sotFZNNzfeMD","priority":"270"}
+
+Jun 05 2022 03:13:54
+{"action":"ai1wm_import","ai1wm_manual_import":"1","storage":"ogxcvgz742en","archive":"localhost-love-20220605-031138-900.wpress","secret_key":"sotFZNNzfeMD","priority":"300"}
+
+Jun 05 2022 03:13:55
+{"action":"ai1wm_import","ai1wm_manual_import":"1","storage":"ogxcvgz742en","archive":"localhost-love-20220605-031138-900.wpress","secret_key":"sotFZNNzfeMD","priority":"350"}
+
